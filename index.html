@@ -1,0 +1,151 @@
+<!doctype html>
+ <html lang="en"> 
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrap demo</title> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
+
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head> 
+
+<body style="background: #c7f0ff;"> 
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid ">
+    <a class="navbar-brand " href="index.html" style="color: white;">Home</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="favoriteclass.html" style="color: white;">Favorite Class</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="leastfavclass.html" style="color: white;">Least Favorite Class</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+
+  <div class col-12><H1 style="font-size: 100pt; text-align: center; font-family: Paprus, fantasy;">FTHS</H1></div>
+</div>
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4"><h2 style="font-size: 50pt; text-align: center; font-family: Brush Script MT, cursive;">My Schedule</h2></div>
+  <div class="col-4"></div>
+</div>
+  
+  <div class="row">
+    <div class="col-3"></div>
+  <div class="col-6">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="border: 5px solid #0d6efd;" src="images/20230109_072218.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="border: 5px solid #0d6efd;" src="images/20230109_072257.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="border: 5px solid #0d6efd;" src="images/20230109_072331.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+    <div class="col-3" > <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  How to read the <span class="badge bg-light" style="color: black;">Schedule</span>
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">How to read the shedule</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        At Freehold Township Highschool, the schedules are pretty complex. But once you understand them they are a breeze to understand. <br>
+        The top bar shows which day of the cycle that the below times and classes correspond to. The left side shows the times that the classes start and end.<br>
+        The Letter classes cycle every seven days of school. so the first day would be and "A" day then "B", "C", etc. <br>
+        As you can see the room numbers and teacher's names are on the classe's squares. They are colored to help visualise the rotation of classes every day.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+      <br>
+      <br>
+      
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Summary of My Classes</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Summary Of My Classes</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>I have 7 classes: <br>Spanish, Physical Education, Chemistry, Web Design, Algebra, English, and History.<br> Spanish is one of my easiest classes, I find languages pretty fascinating, and I know that Spanish is a popular language that can grant me opportunities. <br>Phys Ed is fun and lets me get my energy out early in the day. Safety is a sub-class that I have this year, it is basically driver's ed and I have learned quite a lot. <br>Chemistry is not as easy as Spanish, but I am actually learnign things that I see myself using or at least stuff that I think is interesting. <br>Web Design is the class that I learned to make this website in. It is a lot of fun and not very difficult, as long as you pay attention. <br>Algebra is one of my harder classes but is one that I have always enjoyed none the less. <br>English is a class that isn't very difficult, but I find it very boring. I enjoy creative writing but having to cite and find quotes is very laborious. <br>History is pretty difficult for me, I kinda enjoy learning about history, but the class is very monotonous and boring.</p><br><img src="images/20230109_072218.jpg" style="height: 150px; width: 300px;">
+  </div>
+</div>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</body> 
+
+</html>
